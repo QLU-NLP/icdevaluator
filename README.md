@@ -10,7 +10,7 @@
 
 - 数据集申请
 
-1. 下载《数据使用与保密承诺书》在文档末尾填写参赛队伍信息，下载地址：https://github.com/QLU-NLP/icdevaluator/blob/main/数据使用与保密承诺书.docx。
+1. 下载《数据使用与保密承诺书》在文档末尾填写参赛队伍信息，下载地址：[链接地址](https://github.com/QLU-NLP/icdevaluator/blob/main/doc/数据使用与保密承诺书.docx)。
 2. 参赛队伍负责人签名（手写签名）。
 3. 将签名的《数据使用与保密承诺书》扫描件（PDF）发送至以下邮箱icdevaluator@163.com，邮件标题为：“参赛单位-队伍名称-中文电子病历ICD诊断编码评测数据使用申请”。
 
