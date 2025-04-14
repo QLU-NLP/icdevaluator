@@ -109,6 +109,8 @@
 ![F1 formula](https://latex.codecogs.com/svg.image?\dpi{150}F1(y,\hat{y})=2\cdot\frac{\text{Precision}(y,\hat{y})\cdot\text{Recall}(y,\hat{y})}{\text{Precision}(y,\hat{y})+\text{Recall}(y,\hat{y})})
 
 其中，
+
+
 ![Precision](https://latex.codecogs.com/svg.image?\dpi{150}\text{Precision}(y,\hat{y})=\frac{NUM(y\cap\hat{y})}{NUM(\hat{y})})
 
 
