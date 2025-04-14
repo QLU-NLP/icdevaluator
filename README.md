@@ -100,6 +100,7 @@
 
 
 
+
 其中，![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20I%28%5Ccdot%29)为指示函数，满足条件返回1，否则返回0；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20%5Chat%7By%7D_%7Bmain%7D)和![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20y_%7Bmain%7D)分别表示主诊断编码的预测标签和真实标签；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20NUM%28x%29)代表数量函数，用来计算x的数量，![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20%5Chat%7By%7D_%7Bother%7D)和![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20y_%7Bother%7D)分别表示其他诊断编码的预测标签集和真实标签集；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20N)为测试样本的数量；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20%5C%7B%5Ccdot%5C%7D_i)为第i个中文电子病历的预测准确率。
 
 ## 4、任务奖项
