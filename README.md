@@ -95,8 +95,8 @@
 
 ## 3、评测指标
 中文电子病历ICD诊断编码任务采用正确率（Acc）作为评测指标，计算公式如下：
-![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20Acc%20%3D%20%5Cfrac%7B1%7D%7BN%7D%5Csum_%7Bi%3D1%7D%5EN%5C%7B0.5%5Ccdot%20I%28%5Chat%7By%7D_%7Bmain%7D%20%3D%3D%20y_%7Bmain%7D%29%20%2B%200.5%5Ccdot%20%5Cfrac%7BNUM%28y_%7Bother%7D%20%5Ccap%20%5Chat%7By%7D_%7Bother%7D%29%7D%7BNUM%28y_%7Bother%7D%29%7D%5C%7D_i)
-
+[![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20Acc%20%3D%20%5Cfrac%7B1%7D%7BN%7D%5Csum_%7Bi%3D1%7D%5EN%5C%7B0.5%5Ccdot%20I%28%5Chat%7By%7D_%7Bmain%7D%20%3D%3D%20y_%7Bmain%7D%29%20%2B%200.5%5Ccdot%20%5Cfrac%7BNUM%28y_%7Bother%7D%20%5Ccap%20%5Chat%7By%7D_%7Bother%7D%29%7D%7BNUM%28y_%7Bother%7D%29%7D%5C%7D_i)]
+(https://latex.codecogs.com/svg.image？\text{Acc}=\frac{1}{N}\sum_{i=1}^{N}\left\{0.5\cdot&space;I\hat{y}_{\text{main}}=y_{\text{main}}&plus;0.5\cdot&space;F1\hat{y}_{\text{other}}y_{\text{other}}\;\}_i)
 其中，![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20I%28%5Ccdot%29)为指示函数，满足条件返回1，否则返回0；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20%5Chat%7By%7D_%7Bmain%7D)和![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20y_%7Bmain%7D)分别表示主诊断编码的预测标签和真实标签；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20NUM%28x%29)代表数量函数，用来计算x的数量，![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20%5Chat%7By%7D_%7Bother%7D)和![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20y_%7Bother%7D)分别表示其他诊断编码的预测标签集和真实标签集；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20N)为测试样本的数量；![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B150%7D%20%5Csmall%20%5C%7B%5Ccdot%5C%7D_i)为第i个中文电子病历的预测准确率;F1-score是精确率和召回率的调和平均，用于评估分类模型的整体性能。
 
 ## 4、任务奖项
