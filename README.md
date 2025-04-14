@@ -95,8 +95,8 @@
 
 ## 3、评测指标
 中文电子病历ICD诊断编码任务采用正确率（Acc）作为评测指标，计算公式如下：
-![equation](https://latex.codecogs.com/png.latex?\dpi{150}\small%20Acc%20=%20\frac{1}{N}%20\sum_{i=1}^{N}%20\left\{%200.5%20\cdot%20I(\hat{y}_{main}%20=%20y_{main})%20+%200.5%20\cdot%20\frac{NUM(y_{other}%20\cap%20\hat{y}_{other})}{NUM(y_{other})}%20\right\}_i
-)
+![equation](https://latex.codecogs.com/png.latex?\dpi{150}\small%20Acc%20=%20\frac{1}{N}%20\sum_{i=1}^{N}%20\left\{%200.5%20\cdot%20I(\hat{y}_{main}%20=%20y_{main})%20+%200.5%20\cdot%20\frac{NUM(y_{other}%20\cap%20\hat{y}_{other})}{NUM(y_{other})}%20\right\}_i)
+
 
 
 
