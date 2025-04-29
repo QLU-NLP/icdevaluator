@@ -99,7 +99,7 @@
 
 
 
-![Acc formula](https://latex.codecogs.com/png.image?\dpi{150}Acc=\frac{1}{N}\sum_{i=1}^{N}\lbrace0.5\cdot%20I(y_{\text{main}}=\hat{y}_{\text{main}})+0.5\cdot%20F1(y_{\text{other}},\hat{y}_{\text{other}})\rbrace_i)
+![Acc formula](https://latex.codecogs.com/png.image?\dpi{150}Acc=\frac{1}{N}\sum_{i=1}^{N}\lbrace0.5\cdot%20I(\hat{y}_{\text{main}}=y_{\text{main}})+0.5\cdot%20F1(\hat{y}_{\text{other}},y_{\text{other}})\rbrace_i)
 
 
 
