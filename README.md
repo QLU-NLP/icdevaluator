@@ -101,7 +101,15 @@
 
 ## 3、评测指标
 中文电子病历ICD诊断编码任务采用正确率（Acc）作为评测指标，计算公式如下：
-（1）主要诊断编码（单标签）正确率  A c c_{\text {main }}  ：A c c_{\text {main }}=\frac{\sum_{i=1}^{N} I\left(\hat{y}_{\text {main }}==y_{\text {main }}\right)_{i}}{N}（2）其他诊断编码（标签集合）F1 值  F 1_{\text {other }}: \downarrow F 1_{\text {other }}=\frac{1}{N} \sum_{i=1}^{N} F 1_{\text {other }, i}其中，↓F 1_{\text {other }, i}=\left\{\begin{array}{l}\begin{array}{l}0, \quad N U M\left(\hat{y}_{\text {other }}\right)_{i} \neq N U M\left(y_{\text {other }}\right)_{i} \text { and } N U M\left(\hat{y}_{\text {other }}\right)_{i} \cdot N U M\left(y_{\text {other }}\right)_{i}=0 ; \\1, \\\frac{2 \cdot \text { Precision }_{\text {other }, i} \cdot \text { Recall }_{\text {other }, i},}{\text { Precision }_{\text {other }, i}+\text { Recall }_{\text {other }, i}},\end{array} \quad \begin{array}{r}\text { 否则 }\end{array}\end{array}\right.\begin{array}{c}\text { Precision }_{\text {other }, i}=\frac{N U M\left(y_{\text {other }} \cap \hat{y}_{\text {other }}\right)_{i}}{N U M\left(\hat{y}_{\text {other }}\right)_{i}} \\\text { Recall }_{\text {other }, i}=\frac{N U M\left(y_{\text {other }} \cap \hat{y}_{\text {other }}\right)_{i}}{N U M\left(y_{\text {other }}\right)_{i}}\end{array}（3）主要手术编码正确率  A c c_{\text {op＿main }}  和其他手术编码 F 1 值  F 1_{\text {op＿other }}  计算逻辑分别与主诊断编码、其他诊断编码一致，仅替换对应编码变量即可。（4）最终的综合评估指标  M_{\text {total }}  为：M_{\text {total }}=0.4 A c c_{\text {main }}+0.1 F 1_{\text {other }}+0.4 A c c_{\text {op_main }}+0.1 F 1_{\text {op_other }}其中，  \mathrm{I}(\cdot)  为指示函数，满足条件返回 1 ，否则返回  0, \hat{y}_{\text {main }}  和  \mathrm{y}_{\text {main }}  分别表示主要诊断编码的预测标签和真实标签；NUM（x）代表数量函数，用来计算  x  的数量，
+（1）主要诊断编码（单标签）正确率  A c c_{\text {main }}  ：  
+$$
+Acc_{main} =
+\frac{\sum_{i=1}^{N} I(\hat{y}_{main} == y_{main})_i}{N}
+$$
+
+
+
+A c c_{\text {main }}=\frac{\sum_{i=1}^{N} I\left(\hat{y}_{\text {main }}==y_{\text {main }}\right)_{i}}{N}（2）其他诊断编码（标签集合）F1 值  F 1_{\text {other }}: \downarrow F 1_{\text {other }}=\frac{1}{N} \sum_{i=1}^{N} F 1_{\text {other }, i}其中，↓F 1_{\text {other }, i}=\left\{\begin{array}{l}\begin{array}{l}0, \quad N U M\left(\hat{y}_{\text {other }}\right)_{i} \neq N U M\left(y_{\text {other }}\right)_{i} \text { and } N U M\left(\hat{y}_{\text {other }}\right)_{i} \cdot N U M\left(y_{\text {other }}\right)_{i}=0 ; \\1, \\\frac{2 \cdot \text { Precision }_{\text {other }, i} \cdot \text { Recall }_{\text {other }, i},}{\text { Precision }_{\text {other }, i}+\text { Recall }_{\text {other }, i}},\end{array} \quad \begin{array}{r}\text { 否则 }\end{array}\end{array}\right.\begin{array}{c}\text { Precision }_{\text {other }, i}=\frac{N U M\left(y_{\text {other }} \cap \hat{y}_{\text {other }}\right)_{i}}{N U M\left(\hat{y}_{\text {other }}\right)_{i}} \\\text { Recall }_{\text {other }, i}=\frac{N U M\left(y_{\text {other }} \cap \hat{y}_{\text {other }}\right)_{i}}{N U M\left(y_{\text {other }}\right)_{i}}\end{array}（3）主要手术编码正确率  A c c_{\text {op＿main }}  和其他手术编码 F 1 值  F 1_{\text {op＿other }}  计算逻辑分别与主诊断编码、其他诊断编码一致，仅替换对应编码变量即可。（4）最终的综合评估指标  M_{\text {total }}  为：M_{\text {total }}=0.4 A c c_{\text {main }}+0.1 F 1_{\text {other }}+0.4 A c c_{\text {op_main }}+0.1 F 1_{\text {op_other }}其中，  \mathrm{I}(\cdot)  为指示函数，满足条件返回 1 ，否则返回  0, \hat{y}_{\text {main }}  和  \mathrm{y}_{\text {main }}  分别表示主要诊断编码的预测标签和真实标签；NUM（x）代表数量函数，用来计算  x  的数量，
 
 
 
