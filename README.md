@@ -109,9 +109,9 @@ Acc_{\text{main}} =
 \frac{\sum_{i=1}^{N} I(\hat{y}_{\text{main}} = y_{\text{main}})_i}{N}
 $$
 
-(2) 其他诊断编码（标签集合）F1值 $F1_{\text{other}}$：
+(1) 主要诊断编码（单标签）正确率 $Acc_{\text{main}}$：
 $$
-F1_{\text{other}} = \frac{1}{N}\sum_{i=1}^{N} F1_{\text{other},i}
+Acc_{\text{main}} = \frac{\sum_{i=1}^{N} I(\hat{y}_{\text{main}} = y_{\text{main}})_i}{N}
 $$
 
 
@@ -225,6 +225,7 @@ B榜提交方式：待后面补充。
          b. 团队提交的材料内容不完整，或提交任何虚假信息；
          c. 参赛团队无法就作品疑义进行足够信服的解释说明；
 9. 获奖队伍必须注册会议并在线下参加（如遇特殊情况，可申请线上参加）。
+
 
 
 
